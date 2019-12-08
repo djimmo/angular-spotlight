@@ -57,7 +57,7 @@
                                     wordcount: result.wordcount,
                                     type: 'wikipedia',
                                     href: '#/abc',
-                                    icon: 'fa fa-globe' // The icon key will override the type icon if exists
+                                    icon: 'fas fa-microchip' // The icon key will override the type icon if exists
                                 }
                             }
                         }
