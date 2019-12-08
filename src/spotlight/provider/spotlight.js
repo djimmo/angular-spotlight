@@ -68,7 +68,7 @@ angular.module('de.devjs.angular.spotlight')
 
         function detailsTemplateConfig() {
             var detailsTemplates = {
-                'default': '<div class="ng-spotlight-results-detail-default"><img ng-if="getIconForType(selectedItem.type).type == \'url\'" class="ng-spotlight-item-icon" ng-src="{{getIconForType(selectedItem.type).data}}" width="64" height="64"><div ng-if="getIconForType(selectedItem.type).type == \'css\'" class="ng-spotlight-item-icon {{getIconForType(selectedItem.type).data}}"></div><div class="name">{{selectedItem.name}}</div></div>'
+                'default': '<div class="ng-spotlight-results-detail-default"><div ng-if="selectedItem.icon"><div class="ng-spotlight-item-icon {{selectedItem.icon}}"></div></div><div ng-if="!selectedItem.icon"><img ng-if="getIconForType(selectedItem.type).type == \'url\'" class="ng-spotlight-item-icon" ng-src="{{getIconForType(selectedItem.type).data}}" width="64" height="64"><div ng-if="getIconForType(selectedItem.type).type == \'css\'" class="ng-spotlight-item-icon {{getIconForType(selectedItem.type).data}}"></div></div><div class="name">{{selectedItem.name}}</div></div>'
             };
 
             function addTemplates(templateDescriptors) {

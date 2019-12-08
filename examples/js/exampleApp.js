@@ -56,7 +56,8 @@
                                     size: result.size,
                                     wordcount: result.wordcount,
                                     type: 'wikipedia',
-                                    href: '#/abc'
+                                    href: '#/abc',
+                                    icon: 'fa fa-globe' // The icon key will override the type icon if exists
                                 }
                             }
                         }
@@ -87,7 +88,8 @@
                                     type: 'github',
                                     stars: result.stargazers_count,
                                     forks: result.forks_count,
-                                    href: result.html_url
+                                    href: result.html_url,
+                                    icon: 'fa fa-print'
                                 }
                             }
                         }
