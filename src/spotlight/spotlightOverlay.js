@@ -80,7 +80,10 @@ angular.module('de.devjs.angular.spotlight', [])
                             selectNextEntry();
                             break;
                         case KEY.ESC:
-                            resetSearch();
+                            if ($scope.searchTerm.length > 0)
+                                resetSearch();
+                            else
+                                $ngSpotlightOverlay.hide();
                             break;
                         case KEY.ENTER:
                             $scope.openResultItem();
